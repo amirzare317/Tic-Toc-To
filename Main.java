@@ -53,7 +53,7 @@ public class Main {
         int countOfEmptySpaces = 13;
         Scanner input = new Scanner(System.in);
 
-        System.out.print("\033[H\033[2J");//***************************************
+        System.out.print("\033[H\033[2J");
         while (countOfEmptySpaces > 1) {
             if(flag != 0){
                 break;
@@ -207,7 +207,7 @@ public class Main {
      * @param symbol symbol can be equal to 'X' or 'O'
      * @return boolean value
      */
-        private static boolean gameFinishedCornerwise (String[][]page, String symbol) {
+        private static boolean gameFinishedCornerwise(String[][]page, String symbol) {
 
             if ((page[0][1] == symbol) && (page[1][2] == symbol) && (page[2][3] == symbol) ||
                     (page[0][0] == symbol) && (page[1][1] == symbol) && (page[2][2] == symbol) ||
